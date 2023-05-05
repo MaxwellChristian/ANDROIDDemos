@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ANDROIDDemos</string>
+    <string name="hint_message">Enter your message</string>
+    <string name="btn_show_label">Show</string>
+    <string name="tv_message_default_text">Your message goes here</string>
+
+    <string name="message_welcome">Welcome</string>
+</resources>

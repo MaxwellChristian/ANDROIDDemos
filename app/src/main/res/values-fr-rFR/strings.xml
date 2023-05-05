@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ANDROIDDemos</string>
+    <string name="hint_message">Entrez votre message</string>
+    <string name="btn_show_label">montrer</string>
+    <string name="tv_message_default_text">Votre message va ici</string>
+    <string name="message_welcome">Bienvenue</string>
+</resources>

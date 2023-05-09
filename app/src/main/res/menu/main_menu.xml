@@ -9,4 +9,7 @@
     <item
         android:id="@+id/omiLogin"
         android:title="Login" />
+    <item
+        android:id="@+id/omiCustomToast"
+        android:title="Custom Toast" />
 </menu>

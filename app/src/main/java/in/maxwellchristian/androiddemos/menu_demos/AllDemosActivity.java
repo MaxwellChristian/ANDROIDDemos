@@ -13,6 +13,7 @@ import in.maxwellchristian.androiddemos.Login;
 import in.maxwellchristian.androiddemos.MessageDemo;
 import in.maxwellchristian.androiddemos.R;
 import in.maxwellchristian.androiddemos.TipCalculator;
+import in.maxwellchristian.androiddemos.custom_toast.CustomToastActivity;
 
 public class AllDemosActivity extends AppCompatActivity {
 
@@ -45,6 +46,10 @@ public class AllDemosActivity extends AppCompatActivity {
 
         if (item.getItemId() == R.id.omiTipCalculator) {
             intent.setClass(AllDemosActivity.this, TipCalculator.class);
+        }
+
+        if (item.getItemId() == R.id.omiCustomToast) {
+            intent.setClass(AllDemosActivity.this, CustomToastActivity.class);
         }
 
         AllDemosActivity.this.startActivity(intent);

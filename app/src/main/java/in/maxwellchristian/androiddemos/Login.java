@@ -3,9 +3,12 @@ package in.maxwellchristian.androiddemos;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
@@ -14,6 +17,8 @@ public class Login extends AppCompatActivity {
     EditText etPassword;
     Button btnLogin;
 
+    TextView tvForgotPassword;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +26,8 @@ public class Login extends AppCompatActivity {
 
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
+
+        tvForgotPassword = findViewById(R.id.tvForgotPassword);
 
         btnLogin = findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(view -> {
@@ -43,11 +50,24 @@ public class Login extends AppCompatActivity {
                 // 2. start the activity using intent
                 Login.this.startActivity(nextActivity);
 
+                // if you do no wish to come back to the starting activity
+                // then complete/finish the starting activity
+                Login.this.finish();
+
             }
             else {
                 // show a message as a pop up
                 Toast.makeText(Login.this, "Incorrect username or password", Toast.LENGTH_SHORT).show();
             }
+
+        });
+
+        tvForgotPassword.setOnClickListener(view -> {
+
+            // navigate to the URL using browser
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+            Login.this.startActivity(browserIntent);
 
         });
 

@@ -49,4 +49,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Forgot Password" />
+
+    <TextView
+        android:id="@+id/tvCallExpert"
+        android:layout_marginTop="@dimen/rootLayoutPadding"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call the expert" />
+
+    <TextView
+        android:id="@+id/tvDialCustomerCare"
+        android:layout_marginTop="@dimen/rootLayoutPadding"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dial the customer care" />
 </LinearLayout>

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -18,6 +19,8 @@ public class Login extends AppCompatActivity {
     Button btnLogin;
 
     TextView tvForgotPassword;
+    TextView tvDial;
+    TextView tvCall;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,5 +74,19 @@ public class Login extends AppCompatActivity {
 
         });
 
+        tvDial = findViewById(R.id.tvDialCustomerCare);
+        tvCall = findViewById(R.id.tvCallExpert);
+
+        tvDial.setOnClickListener(view -> {
+            Intent browserIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:3069990000"));
+            Login.this.startActivity(browserIntent);
+        });
+
+        tvCall.setOnClickListener(view -> {
+            Intent browserIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:3069990000"));
+            Login.this.startActivity(browserIntent);
+        });
+
     }
+
 }

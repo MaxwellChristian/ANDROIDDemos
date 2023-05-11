@@ -12,4 +12,11 @@
     <item
         android:id="@+id/omiCustomToast"
         android:title="Custom Toast" />
+    <item
+        android:id="@+id/omiRecyclerDemo"
+        android:title="Recycler Demo" />
+
+    <item
+        android:id="@+id/omiConstraintLayoutDemo"
+        android:title="Constraint Layout Demo" />
 </menu>

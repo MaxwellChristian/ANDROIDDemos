@@ -13,7 +13,9 @@ import in.maxwellchristian.androiddemos.Login;
 import in.maxwellchristian.androiddemos.MessageDemo;
 import in.maxwellchristian.androiddemos.R;
 import in.maxwellchristian.androiddemos.TipCalculator;
+import in.maxwellchristian.androiddemos.constraint_layout_demo.ConstraintLayoutDemo;
 import in.maxwellchristian.androiddemos.custom_toast.CustomToastActivity;
+import in.maxwellchristian.androiddemos.recycler_demo.RecyclerDemo;
 
 public class AllDemosActivity extends AppCompatActivity {
 
@@ -26,7 +28,7 @@ public class AllDemosActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
-        return super.onCreateOptionsMenu(menu);
+        return true;
     }
 
     @Override
@@ -50,6 +52,14 @@ public class AllDemosActivity extends AppCompatActivity {
 
         if (item.getItemId() == R.id.omiCustomToast) {
             intent.setClass(AllDemosActivity.this, CustomToastActivity.class);
+        }
+
+        if (item.getItemId() == R.id.omiRecyclerDemo) {
+            intent.setClass(AllDemosActivity.this, RecyclerDemo.class);
+        }
+
+        if (item.getItemId() == R.id.omiConstraintLayoutDemo) {
+            intent.setClass(AllDemosActivity.this, ConstraintLayoutDemo.class);
         }
 
         AllDemosActivity.this.startActivity(intent);

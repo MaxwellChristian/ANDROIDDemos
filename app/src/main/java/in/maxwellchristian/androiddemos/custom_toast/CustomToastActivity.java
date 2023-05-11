@@ -3,7 +3,6 @@ package in.maxwellchristian.androiddemos.custom_toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;

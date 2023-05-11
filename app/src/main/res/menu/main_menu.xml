@@ -19,4 +19,9 @@
     <item
         android:id="@+id/omiConstraintLayoutDemo"
         android:title="Constraint Layout Demo" />
+
+    <item
+        android:id="@+id/omiBottomNavigationDemo"
+        android:title="Bottom Navigation Demo" />
+
 </menu>

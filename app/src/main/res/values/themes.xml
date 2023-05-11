@@ -2,5 +2,6 @@
 <resources>
 
 <!--    <style name="Theme.ANDROIDDemos" parent="android:Theme.Material.Light.NoActionBar" />-->
-    <style name="Theme.ANDROIDDemos" parent="Theme.AppCompat" />
+    <style name="Theme.ANDROIDDemos" parent="Theme.Material3.DayNight" />
+<!--    <style name="Theme.ANDROIDDemos" parent="Theme.AppCompat" />-->
 </resources>

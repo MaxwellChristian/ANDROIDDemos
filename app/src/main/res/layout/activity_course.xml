@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/rootLayoutPadding"
+    tools:context=".course_demo.CourseActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/listFragment"
+        android:name="in.maxwellchristian.androiddemos.course_demo.CourseListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/detailsFragment"
+        android:name="in.maxwellchristian.androiddemos.course_demo.CourseDetailsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>

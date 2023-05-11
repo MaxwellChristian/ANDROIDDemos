@@ -13,9 +13,11 @@ import in.maxwellchristian.androiddemos.Login;
 import in.maxwellchristian.androiddemos.MessageDemo;
 import in.maxwellchristian.androiddemos.R;
 import in.maxwellchristian.androiddemos.TipCalculator;
+import in.maxwellchristian.androiddemos.bottom_navigation_demo.BottomNavigationActivity;
 import in.maxwellchristian.androiddemos.constraint_layout_demo.ConstraintLayoutDemo;
 import in.maxwellchristian.androiddemos.custom_toast.CustomToastActivity;
 import in.maxwellchristian.androiddemos.recycler_demo.RecyclerDemo;
+
 
 public class AllDemosActivity extends AppCompatActivity {
 
@@ -60,6 +62,10 @@ public class AllDemosActivity extends AppCompatActivity {
 
         if (item.getItemId() == R.id.omiConstraintLayoutDemo) {
             intent.setClass(AllDemosActivity.this, ConstraintLayoutDemo.class);
+        }
+
+        if (item.getItemId() == R.id.omiBottomNavigationDemo) {
+            intent.setClass(AllDemosActivity.this, BottomNavigationActivity.class);
         }
 
         AllDemosActivity.this.startActivity(intent);

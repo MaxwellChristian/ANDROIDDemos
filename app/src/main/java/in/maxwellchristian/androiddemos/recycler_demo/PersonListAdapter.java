@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,6 +57,7 @@ public class PersonListAdapter extends
         // declaration of controls to bind from the view for individual records
         TextView tvName;
         TextView tvAddress;
+        ImageView imgAvatar;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -63,6 +65,7 @@ public class PersonListAdapter extends
             // bind the controls using the IDs
             tvName = itemView.findViewById(R.id.tvName);
             tvAddress = itemView.findViewById(R.id.tvAddress);
+            imgAvatar = itemView.findViewById(R.id.imgAvatar);
 
             // attach the event listeners [if needed]
             itemView.setOnClickListener(this);

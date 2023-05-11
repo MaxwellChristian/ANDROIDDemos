@@ -5,6 +5,7 @@
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="false" />
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -17,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ANDROIDDemos"
         tools:targetApi="31">
+        <activity
+            android:name=".constraint_layout_demo.ConstraintLayoutDemo"
+            android:exported="false" />
         <activity
             android:name=".custom_toast.CustomToastActivity"
             android:exported="false" />

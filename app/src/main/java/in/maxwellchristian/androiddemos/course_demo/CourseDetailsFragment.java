@@ -4,10 +4,13 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 import in.maxwellchristian.androiddemos.R;
 
@@ -83,9 +86,13 @@ public class CourseDetailsFragment extends Fragment implements CourseSelectedLis
         //Set the text of each TextView to match the selected Course
         name.setText(course.name);
         code.setText(course.code);
-        credits.setText(Integer.toString(course.credits));
-        hours.setText(Integer.toString(course.hours));
         description.setText(course.description);
+
+//        credits.setText(Integer.toString(course.credits));
+//        hours.setText(Integer.toString(course.hours));
+
+        credits.setText(String.format(Locale.getDefault(), "%s", course.credits));
+        hours.setText(String.format(Locale.getDefault(), "%s", course.hours));
 
     }
 }

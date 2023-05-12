@@ -14,16 +14,17 @@ public class CourseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course);
 
-        //Obtain the Fragment Manager
+        // Obtain the Fragment Manager
         FragmentManager manager = getSupportFragmentManager();
 
-//Obtain references to the two Fragments
+        // Obtain references to the two Fragments
         CourseListFragment listFragment = (CourseListFragment) manager.findFragmentById(R.id.listFragment);
         CourseDetailsFragment detailsFragment = (CourseDetailsFragment) manager.findFragmentById(R.id.detailsFragment);
 
-//Because CourseListFragment depends on CourseSelectedListener rather than directly on
-//CourseDetailsFragment, the details Fragment could be replaced without needing
-//to change code in the list Fragment
+        //Because CourseListFragment depends on CourseSelectedListener rather than directly on
+        //CourseDetailsFragment, the details Fragment could be replaced without needing
+        //to change code in the list Fragment
+        assert listFragment != null;
         listFragment.setCourseSelectedListener(detailsFragment);
 
     }

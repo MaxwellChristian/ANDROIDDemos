@@ -8,7 +8,8 @@ public class Course {
     public int credits;
     public String description;
 
-    public Course(String name, String code, int hours, int credits, String description) {
+    public Course(String name, String code, int hours, int credits,
+                  String description) {
         this.name = name;
         this.code = code;
         this.hours = hours;

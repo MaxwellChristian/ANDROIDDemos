@@ -15,6 +15,7 @@ import in.maxwellchristian.androiddemos.R;
 import in.maxwellchristian.androiddemos.TipCalculator;
 import in.maxwellchristian.androiddemos.bottom_navigation_demo.BottomNavigationActivity;
 import in.maxwellchristian.androiddemos.constraint_layout_demo.ConstraintLayoutDemo;
+import in.maxwellchristian.androiddemos.course_demo.CourseActivity;
 import in.maxwellchristian.androiddemos.custom_toast.CustomToastActivity;
 import in.maxwellchristian.androiddemos.recycler_demo.RecyclerDemo;
 
@@ -66,6 +67,10 @@ public class AllDemosActivity extends AppCompatActivity {
 
         if (item.getItemId() == R.id.omiBottomNavigationDemo) {
             intent.setClass(AllDemosActivity.this, BottomNavigationActivity.class);
+        }
+
+        if (item.getItemId() == R.id.omiFragmentsDemo) {
+            intent.setClass(AllDemosActivity.this, CourseActivity.class);
         }
 
         AllDemosActivity.this.startActivity(intent);

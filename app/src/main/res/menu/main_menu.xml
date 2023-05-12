@@ -24,4 +24,8 @@
         android:id="@+id/omiBottomNavigationDemo"
         android:title="Bottom Navigation Demo" />
 
+    <item
+        android:id="@+id/omiFragmentsDemo"
+        android:title="Fragments Demo" />
+
 </menu>

@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 import in.maxwellchristian.androiddemos.R;
+import in.maxwellchristian.androiddemos.shared_preferences_demo.SharedPreferencesActivity;
 
 public class RecyclerDemo extends AppCompatActivity {
 
@@ -16,9 +19,31 @@ public class RecyclerDemo extends AppCompatActivity {
     ArrayList<Person> people;
     PersonListAdapter adapter;
 
+    private void writeToSharedPreferences() {
+
+        // get the reference to shared preferences for the app
+        SharedPreferences sPrefs =
+                RecyclerDemo.this.getSharedPreferences("MyAppSP",
+                        MODE_PRIVATE);
+
+        // write the key value pair to the shared preferences
+
+        // a shared preference editor is required to modify/add the
+        // shared preferences
+        SharedPreferences.Editor spEditor = sPrefs.edit();
+
+        // store the key value pair to the shard preferences
+        spEditor.putString("Recycler Demo", new Date().toString());
+
+        // to save the key value pair, commit is mandatory
+        spEditor.commit();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        writeToSharedPreferences();
 
         // data structure to hold multiple records
         people = new ArrayList<>();

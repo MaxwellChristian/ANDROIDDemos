@@ -28,4 +28,8 @@
         android:id="@+id/omiFragmentsDemo"
         android:title="Fragments Demo" />
 
+    <item
+        android:id="@+id/omiSharedPreferencesDemo"
+        android:title="Shared Preferences Demo" />
+
 </menu>

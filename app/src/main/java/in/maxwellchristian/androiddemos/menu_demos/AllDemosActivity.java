@@ -17,6 +17,7 @@ import in.maxwellchristian.androiddemos.bottom_navigation_demo.BottomNavigationA
 import in.maxwellchristian.androiddemos.constraint_layout_demo.ConstraintLayoutDemo;
 import in.maxwellchristian.androiddemos.course_demo.CourseActivity;
 import in.maxwellchristian.androiddemos.custom_toast.CustomToastActivity;
+import in.maxwellchristian.androiddemos.file_storage_demo.files_with_data_directory.FilesWithDataDirectory;
 import in.maxwellchristian.androiddemos.recycler_demo.RecyclerDemo;
 import in.maxwellchristian.androiddemos.shared_preferences_demo.SharedPreferencesActivity;
 
@@ -76,6 +77,10 @@ public class AllDemosActivity extends AppCompatActivity {
 
         if (item.getItemId() == R.id.omiSharedPreferencesDemo) {
             intent.setClass(AllDemosActivity.this, SharedPreferencesActivity.class);
+        }
+
+        if (item.getItemId() == R.id.omiDataDirFilesDemo) {
+            intent.setClass(AllDemosActivity.this, FilesWithDataDirectory.class);
         }
 
         AllDemosActivity.this.startActivity(intent);

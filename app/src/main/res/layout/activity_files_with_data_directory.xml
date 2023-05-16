@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".file_storage_demo.files_with_data_directory.FilesWithDataDirectory">
+
+    <EditText
+        android:id="@+id/etContentForFileDataDir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="start"
+        android:hint="Enter content to be added to the file"
+        android:isScrollContainer="true"
+        android:minLines="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnWriteToFileDataDir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Write to File"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContentForFileDataDir" />
+
+    <Button
+        android:id="@+id/btnReadFromFileDataDir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Read from File"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWriteToFileDataDir" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReadFromFileDataDir">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvContentsOfFileDataDir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollIndicators="end"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:text="The file details and content goes here
+dafadfdsf
+sdfsd
+fsd
+fsd
+f
+sdf
+sd
+fsd
+f
+sd
+f
+sdf
+sd
+f
+sdf
+sd
+fsd
+fsd
+fsd
+f
+sd'
+fsd
+f
+sd'f
+sd
+fds
+f
+ds'
+f'sd
+'f
+sd
+fsd
+f
+ds'f
+'ds
+f
+sd'f
+'sd
+f'
+sd'f
+d's
+f'sd
+'f
+s'd
+f'sd
+'f
+ds'f
+'sd
+f'
+sd'f
+sd
+xxcxxcxcxc
+xcxcxcxcxcxcx" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

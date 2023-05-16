@@ -32,4 +32,8 @@
         android:id="@+id/omiSharedPreferencesDemo"
         android:title="Shared Preferences Demo" />
 
+    <item
+        android:id="@+id/omiDataDirFilesDemo"
+        android:title="Files Demo [Data Dir]" />
+
 </menu>

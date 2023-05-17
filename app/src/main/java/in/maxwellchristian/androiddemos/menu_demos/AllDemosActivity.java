@@ -18,6 +18,7 @@ import in.maxwellchristian.androiddemos.constraint_layout_demo.ConstraintLayoutD
 import in.maxwellchristian.androiddemos.course_demo.CourseActivity;
 import in.maxwellchristian.androiddemos.custom_toast.CustomToastActivity;
 import in.maxwellchristian.androiddemos.file_storage_demo.files_with_data_directory.FilesWithDataDirectory;
+import in.maxwellchristian.androiddemos.file_storage_demo.files_with_external_storage.FilesWithExternalStorage;
 import in.maxwellchristian.androiddemos.recycler_demo.RecyclerDemo;
 import in.maxwellchristian.androiddemos.shared_preferences_demo.SharedPreferencesActivity;
 
@@ -81,6 +82,10 @@ public class AllDemosActivity extends AppCompatActivity {
 
         if (item.getItemId() == R.id.omiDataDirFilesDemo) {
             intent.setClass(AllDemosActivity.this, FilesWithDataDirectory.class);
+        }
+
+        if (item.getItemId() == R.id.omiExternalStorageFilesDemo) {
+            intent.setClass(AllDemosActivity.this, FilesWithExternalStorage.class);
         }
 
         AllDemosActivity.this.startActivity(intent);

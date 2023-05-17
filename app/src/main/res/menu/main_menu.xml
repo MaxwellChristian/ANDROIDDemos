@@ -36,4 +36,8 @@
         android:id="@+id/omiDataDirFilesDemo"
         android:title="Files Demo [Data Dir]" />
 
+    <item
+        android:id="@+id/omiExternalStorageFilesDemo"
+        android:title="Files Demo [External Storage]" />
+
 </menu>

@@ -29,11 +29,11 @@
             android:exported="true"
             android:label="@string/title_activity_item_detail_host"
             android:resizeableActivity="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
         </activity>
         <activity
             android:name=".file_storage_demo.files_with_external_storage.FilesWithExternalStorage"

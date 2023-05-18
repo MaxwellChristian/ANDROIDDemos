@@ -28,8 +28,7 @@
             android:name=".master_detail_demo.ItemDetailHostActivity"
             android:exported="true"
             android:label="@string/title_activity_item_detail_host"
-            android:resizeableActivity="true"
-            tools:targetApi="24" >
+            android:resizeableActivity="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

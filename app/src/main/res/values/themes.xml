@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<!--    <style name="Theme.ANDROIDDemos" parent="android:Theme.Material.Light.NoActionBar" />-->
+    <!--    <style name="Theme.ANDROIDDemos" parent="android:Theme.Material.Light.NoActionBar" />-->
     <style name="Theme.ANDROIDDemos" parent="Theme.Material3.DayNight" />
-<!--    <style name="Theme.ANDROIDDemos" parent="Theme.AppCompat" />-->
+
+    <style name="Theme.ANDROIDDemos.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ANDROIDDemos.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ANDROIDDemos.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--    <style name="Theme.ANDROIDDemos" parent="Theme.AppCompat" />-->
 </resources>

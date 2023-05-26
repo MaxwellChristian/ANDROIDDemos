@@ -32,7 +32,7 @@ public class FuelTrackerActivity extends AppCompatActivity {
 
         fuelDBHelper = new FuelDBHelper(FuelTrackerActivity.this);
 
-        setContentView(R.layout.activity_fuel_tracker);
+        setContentView(R.layout.activity_tracker_fuel);
 
         bindControls();
 

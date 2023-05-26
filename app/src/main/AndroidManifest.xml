@@ -27,6 +27,15 @@
         android:theme="@style/Theme.ANDROIDDemos"
         tools:targetApi="31">
         <activity
+            android:name=".dialog_demo.DialogDemoActivity"
+            android:exported="true" >
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
             android:name=".sqlite_demo.FuelTrackerActivity"
             android:exported="true">
             <intent-filter>

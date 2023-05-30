@@ -6,6 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FuelDBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "dbFuel";
     private static final int DATABASE_VERSION = 1;
@@ -124,5 +127,15 @@ public class FuelDBHelper extends SQLiteOpenHelper {
 
         return this.getReadableDatabase().rawQuery(sSelect, null);
 
+    }
+
+    public ArrayList<FuelPurchase> toList(Cursor cursor) {
+        ArrayList<FuelPurchase> purchaseList = new ArrayList<>();
+        while (cursor.moveToNext()){
+            purchaseList.add(new FuelPurchase(cursor.getLong(0),
+                    cursor.getString(1), cursor.getDouble(2),
+                    cursor.getDouble(3)));
+        }
+        return purchaseList;
     }
 }

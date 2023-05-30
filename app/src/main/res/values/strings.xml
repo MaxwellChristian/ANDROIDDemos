@@ -17,4 +17,16 @@
     <string name="title_item_list">Items</string>
     <string name="title_item_detail">Item Detail</string>
 
+    <!--    e.g.: 115.20 litres-->
+    <string name="fuel_purchase_message_show_litres">%1$3.0f
+        litres</string>
+
+    <!--    @1.49 CAD-->
+    <string name="fuel_purchase_message_show_rate">\@%1$4.2f
+        %2$s</string>
+
+    <!--    1789.24 CAD-->
+    <string name="fuel_purchase_message_show_cost">\@%1$4.2f
+        %2$s</string>
+
 </resources>

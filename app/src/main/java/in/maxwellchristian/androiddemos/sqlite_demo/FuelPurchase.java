@@ -1,6 +1,11 @@
 package in.maxwellchristian.androiddemos.sqlite_demo;
 
-public class FuelPurchase {
+import android.database.Cursor;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class FuelPurchase implements Serializable {
 
     //Identifier for specific purchase
     public long id;
@@ -16,10 +21,12 @@ public class FuelPurchase {
         this.cost = cost;
     }
 
+
     public FuelPurchase(long id, String date, double litres, double cost) {
         this.id = id;
         this.date = date;
         this.litres = litres;
         this.cost = cost;
     }
+
 }
